@@ -2405,7 +2405,10 @@
       <value>Контрагент 1С</value>
     </title>
     <id>7</id>
-    <valueType/>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
     <view>
       <common>true</common>
     </view>

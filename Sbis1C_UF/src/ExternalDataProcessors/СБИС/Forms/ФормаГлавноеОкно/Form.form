@@ -5879,6 +5879,99 @@
             <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
           </items>
           <items xsi:type="form:FormField">
+            <name>Таблица_РеестрДокументоваян_ЗаполненШК</name>
+            <id>2061</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Таблица_РеестрДокументов.аян_ЗаполненШК</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>Таблица_РеестрДокументоваян_ЗаполненШКРасширеннаяПодсказка</name>
+              <id>2063</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>Таблица_РеестрДокументоваян_ЗаполненШККонтекстноеМеню</name>
+              <id>2062</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>Таблица_РеестрДокументоваян_ОшибкиЗаполненияШК</name>
+            <id>2058</id>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Таблица_РеестрДокументов.аян_ОшибкиЗаполненияШК</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>Таблица_РеестрДокументоваян_ОшибкиЗаполненияШКРасширеннаяПодсказка</name>
+              <id>2060</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>Таблица_РеестрДокументоваян_ОшибкиЗаполненияШККонтекстноеМеню</name>
+              <id>2059</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <extendedEditMultipleValues>true</extendedEditMultipleValues>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
             <name>Таблица_РеестрДокументовПроведен</name>
             <id>60</id>
             <title>
@@ -13001,6 +13094,41 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>аян_ОшибкиЗаполненияШК</name>
+      <title>
+        <key>ru</key>
+        <value>*Ошибка</value>
+      </title>
+      <id>23</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>аян_ЗаполненШК</name>
+      <title>
+        <key>ru</key>
+        <value>*ШК</value>
+      </title>
+      <id>24</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>Таблица_РеестрСобытий</name>
@@ -16493,6 +16621,63 @@
     </edit>
     <settingsSavedData xsi:type="form:DataPath">
       <segments>ПараметрыПереносаСопоставлений_Форма</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>аян_ФильтрКонтрагентНастроенЭДОСБИС</name>
+    <title>
+      <key>ru</key>
+      <value>*Контрагент настроен ЭДО СБИС</value>
+    </title>
+    <id>133</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>аян_ФильтрСписокВидовНоменклатур</name>
+    <title>
+      <key>ru</key>
+      <value>*Список видов номенклатур</value>
+    </title>
+    <id>134</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>аян_ОтправлятьТолькоЗаполненныеШК</name>
+    <title>
+      <key>ru</key>
+      <value>*Отправлять только заполненные ШК</value>
+    </title>
+    <id>135</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>аян_ОтправлятьТолькоЗаполненныеШК</segments>
     </settingsSavedData>
   </attributes>
   <formCommands>
